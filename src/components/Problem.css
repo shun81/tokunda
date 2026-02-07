@@ -1,0 +1,75 @@
+.problem {
+    background: var(--color-gray-50);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 3rem;
+}
+
+.problem-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 1px solid var(--color-gray-100);
+}
+
+.problem-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.problem-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.problem-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-900);
+}
+
+.problem-description {
+    font-size: 0.9rem;
+    color: var(--color-gray-500);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.problem-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.problem-conclusion {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--color-gray-700);
+}
+
+@media (max-width: 768px) {
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+}

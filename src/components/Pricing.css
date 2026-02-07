@@ -1,0 +1,92 @@
+.pricing {
+    background: var(--color-white);
+}
+
+.pricing-card {
+    max-width: 480px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--color-white), var(--color-gray-50));
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    border: 1px solid var(--color-gray-200);
+}
+
+.pricing-header {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    padding: 2.5rem 2rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.pricing-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.pricing-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price-yen {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.price-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.price-tax {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.pricing-body {
+    padding: 2rem;
+}
+
+.pricing-features {
+    list-style: none;
+}
+
+.pricing-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-gray-100);
+    font-size: 1rem;
+    color: var(--color-gray-700);
+}
+
+.pricing-feature:last-child {
+    border-bottom: none;
+}
+
+.feature-icon {
+    font-size: 1.25rem;
+}
+
+.pricing-footer {
+    padding: 0 2rem 2rem;
+    text-align: center;
+}
+
+.pricing-footer .btn {
+    width: 100%;
+}
+
+.pricing-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-gray-500);
+}
