@@ -1,11 +1,4 @@
-# SEO robots.txt for Tokunda
 User-agent: *
 Allow: /
-Disallow: /node_modules/
-Disallow: /.git/
 
-# Crawl delay (respects the server)
-Crawl-delay: 1
-
-# Sitemaps
-Sitemap: https://tokunda.jp/sitemap.xml
+Sitemap: https://tokunda.vercel.app/sitemap.xml
