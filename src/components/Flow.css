@@ -1,0 +1,128 @@
+.flow {
+    background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+}
+
+.flow-timeline {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.flow-item {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.flow-item:last-child {
+    padding-bottom: 0;
+}
+
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 80px;
+}
+
+.step-number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.05em;
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-white);
+    border: 3px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 1;
+}
+
+.flow-content {
+    flex: 1;
+    padding-top: 24px;
+}
+
+.flow-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-900);
+}
+
+.flow-description {
+    font-size: 0.9rem;
+    color: var(--color-gray-500);
+    margin-bottom: 0;
+}
+
+.flow-connector {
+    position: absolute;
+    left: 40px;
+    top: 76px;
+    transform: translateX(-50%);
+    color: var(--color-gray-300);
+    animation: bounce 2s infinite;
+}
+
+.flow-note {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--color-secondary-light);
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.note-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.note-content strong {
+    display: block;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.note-content p {
+    font-size: 0.9rem;
+    color: var(--color-gray-700);
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .flow-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .flow-connector {
+        position: static;
+        transform: none;
+        margin-top: 0.5rem;
+    }
+
+    .flow-content {
+        padding-top: 0;
+    }
+
+    .flow-note {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

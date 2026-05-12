@@ -1,0 +1,102 @@
+.problem {
+    background-color: #f8fafc;
+}
+
+.problem-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+}
+
+.problem-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+}
+
+.problem-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.problem-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.problem-description {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Mobile Layout (Default - Flex Column) */
+.problem-card.homework {
+    order: -1;
+    /* Ensure homework is first on mobile */
+}
+
+/* PC Layout */
+@media (min-width: 768px) {
+    .problem-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .problem-card.homework {
+        order: unset;
+        /* Reset order for grid layout */
+    }
+
+    /* If specifically wanting it in the middle (2nd item), grid naturally places it there if it's the 1st item in array? 
+       Wait, the array order is [Homework, Conflict, Anxiety]. 
+       On PC: [Homework, Conflict, Anxiety] -> Homework is Left.
+       User wants: Mobile=Top, PC=Middle.
+       
+       If Array is [Homework, Conflict, Anxiety]:
+       Mobile (Flex Col): Homework(1), Conflict(2), Anxiety(3). This is already top.
+       PC (Grid 3 cols): Homework(Left), Conflict(Center), Anxiety(Right).
+       
+       To get PC Middle:
+       We need array to be [Conflict, Homework, Anxiety] OR use order.
+       
+       Let's use order for PC too.
+    */
+
+    .problem-card.conflict {
+        order: 1;
+    }
+
+    .problem-card.homework {
+        order: 2;
+    }
+
+    .problem-card.anxiety {
+        order: 3;
+    }
+}
+
+.problem-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin: 2rem 0;
+    animation: bounce 2s infinite;
+}
+
+.problem-conclusion {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+

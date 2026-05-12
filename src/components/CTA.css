@@ -1,0 +1,84 @@
+.cta {
+    background: linear-gradient(180deg, var(--color-white) 0%, var(--color-gray-50) 100%);
+}
+
+.cta-card {
+    position: relative;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
+    border-radius: var(--border-radius-lg);
+    padding: 4rem 2rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.cta-title .text-primary {
+    color: #FFEDD5;
+}
+
+.cta-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Decorations */
+.cta-decoration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.decoration-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -50px;
+}
+
+.decoration-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    left: -50px;
+}
+
+.decoration-3 {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 20%;
+}
+
+@media (max-width: 768px) {
+    .cta-card {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-description br {
+        display: none;
+    }
+}
