@@ -55,7 +55,7 @@ function Hero() {
 
                 <div className="hero-visual animate-fade-in-up delay-3">
                     <div className="hero-card animate-float">
-                        <img src="/assets/logo.png" alt="Tokunda ロゴ" className="hero-logo" />
+                        <img src="/assets/logo.png" alt="Tokunda -とくんだ- ロゴ。LINEベースの毎日算数添削サービス。" className="hero-logo" />
                         <div className="hero-card-content">
                             <div className="chat-bubble chat-sent">
                                 <span>今日の計算課題やりました！📝</span>

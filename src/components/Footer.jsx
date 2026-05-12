@@ -8,7 +8,7 @@ function Footer() {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <img src="/assets/logo.png" alt="Tokunda ロゴ" className="footer-logo" />
+                        <img src="/assets/logo.png" alt="Tokunda -とくんだ- ロゴ。親子の喧嘩をゼロに。算数の土台を作る。" className="footer-logo" />
                         <p className="footer-tagline">
                             親子の喧嘩をゼロに。算数の土台を作る。
                         </p>

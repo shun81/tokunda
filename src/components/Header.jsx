@@ -17,7 +17,7 @@ function Header() {
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <a href="#" className="header-logo">
-                    <img src="/assets/logo.png" alt="Tokunda" />
+                    <img src="/assets/logo.png" alt="Tokunda -とくんだ- ホームへ" />
                 </a>
 
                 <button
