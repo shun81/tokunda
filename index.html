@@ -15,7 +15,7 @@
     <meta property="og:title" content="Tokunda -とくんだ- | 親子の喧嘩をゼロに。算数の土台を作る。" />
     <meta property="og:description" content="Tokundaは、親に代わって第三者がLINEで毎日並走することで、中学受験における計算・基礎の習慣化をサポートする伴走型学習サービスです。" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Tokunda -とくんだ-" />
+    <meta property="og:site_name" content="Tokunda" />
     <meta property="og:image" content="/assets/logo.png" />
     <meta property="og:image:alt" content="Tokunda -とくんだ- ロゴ" />
     <meta property="og:locale" content="ja_JP" />
@@ -27,9 +27,26 @@
     <meta name="twitter:image" content="/assets/logo.png" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://tokunda.jp/" />
+    <link rel="canonical" href="https://tokunda.vercel.app" />
 
     <!-- Schema.org 構造化データ (JSON-LD) -->
+    <!-- WebSite schema (Googleがサイト名を特定するために最も重視) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tokunda -とくんだ-",
+      "url": "https://tokunda.vercel.app",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://tokunda.vercel.app"
+        }
+      }
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
