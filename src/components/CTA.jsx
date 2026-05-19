@@ -15,7 +15,7 @@ function CTA() {
                         </p>
 
                         <a
-                            href="https://line.me/R/"
+                            href="https://lin.ee/oeoXYRG"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-line btn-large"

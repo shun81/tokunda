@@ -19,6 +19,7 @@ function DemoVideo() {
                         playsInline
                         className="demo-video-player"
                         title="Tokunda サービス紹介動画"
+                        preload="none"
                     >
                         <source src="/assets/tokunda_howto.mp4" type="video/mp4" />
                         <source src="/assets/tokunda_howto.mov" type="video/quicktime" />

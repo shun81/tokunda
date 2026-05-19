@@ -20,7 +20,7 @@ function ServiceDetails() {
                             </p>
                         </div>
                         <div className="detail-image-wrapper">
-                            <img src="/assets/online-session.png" alt="Tokundaの講師によるオンライン面談。ノートの作り方や計算欄の取り方を指導している様子。" className="detail-image" />
+                            <img src="/assets/online-session.png" alt="Tokundaの講師によるオンライン面談。ノートの作り方や計算欄の取り方を指導している様子。" className="detail-image" loading="lazy" width="400" height="500" />
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ function ServiceDetails() {
                             </p>
                         </div>
                         <div className="detail-image-wrapper">
-                            <img src="/assets/note-taking.png" alt="丁寧に作られた中学受験向けノート。計算欄が広く取られ、解き直しスペースが整理されている例。" className="detail-image" />
+                            <img src="/assets/note-taking.png" alt="丁寧に作られた中学受験向けノート。計算欄が広く取られ、解き直しスペースが整理されている例。" className="detail-image" loading="lazy" width="400" height="500" />
                         </div>
                     </div>
                 </div>
